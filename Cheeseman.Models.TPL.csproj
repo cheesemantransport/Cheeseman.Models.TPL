@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Cheeseman.Models.TPL</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>Cheeseman.NET.Models.TPL</PackageId>
+    <Authors>Cheeseman</Authors>
+    <Product>Cheeseman.NET.Models.TPL</Product>
+    <Version>2024.1.25.2</Version>
+  </PropertyGroup>
+</Project>
