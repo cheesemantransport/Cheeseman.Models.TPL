@@ -1,30 +1,26 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Cheeseman.Models.TPL.Quote
 {
     public class LTLQuoteRequestModel
     {
-        /// <summary>
-        /// Client specified reference information.
-        /// </summary>
+        [Description("Client specified reference information")]
         [MaxLength(40)]
         public string REFERENCE { get; set; }
 
-        /// <summary>
-        /// Shipper's US 5-digit Zip Code or Canadian 7-character Postal Code.
-        /// </summary>
+        [Description("Shipper's US 5-digit Zip Code or Canadian 7-character Postal Code.")]
         [MaxLength(10)]
+        [Required]
         public string START_ZONE { get; set; }
 
-        /// <summary>
-        /// Consignee's US 5-digit Zip Code or Canadian 7-character Postal Code.
-        /// </summary>
+        [Description("Consignee's US 5-digit Zip Code or Canadian 7-character Postal Code.")]
         [MaxLength(10)]
+        [Required]
         public string END_ZONE { get; set; }
 
-        /// <summary>
-        /// Collection of freight details.
-        /// </summary>
+        [Description("Collection of freight details.")]
+        [Required]
         public IEnumerable<LTLQuoteRequestDetailModel> DETAILS { get; set; }
     }
 }
