@@ -78,6 +78,8 @@
 
         public double? TOTAL_CHARGES { get; set; }
 
+        public string NOTICE { get; set; }
+
         public IEnumerable<QuoteDetailModel> DETAIL { get; set; }
 
         public IEnumerable<QuoteAccessorialModel> ACCESSORIAL { get; set; }
