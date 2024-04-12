@@ -27,5 +27,7 @@ namespace Cheeseman.Models.TPL.Transit
 
         [Description("Details about each day included in the transit time.")]
         public IEnumerable<TransitTimeDetailModel> DETAILS { get; set; } = new List<TransitTimeDetailModel>();
+
+        public string NOTICE { get; set; }
     }
 }
