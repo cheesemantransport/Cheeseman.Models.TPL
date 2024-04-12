@@ -21,7 +21,7 @@ namespace Cheeseman.Models.TPL.Transit
         [Required]
         public string END_ZONE { get; set; }
 
-        [Description("Date of the pick-up.")]
+        [Description("Date of the pick-up.  Time is omitted for calculation.")]
         [Required]
         public DateTime PICK_UP_DATE { get; set; }
     }
