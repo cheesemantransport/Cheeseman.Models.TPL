@@ -7,12 +7,12 @@ namespace Cheeseman.Models.TPL.Quote
     {
         [Description("Client specified reference information")]
         [MaxLength(40)]
-        public string REFERENCE { get; set; }
+        public string REFERENCE { get; set; } = string.Empty;
 
         [Description("Shipper's US 5-digit Zip Code or Canadian 7-character Postal Code.")]
         [MaxLength(10)]
         [Required]
-        public string START_ZONE { get; set; }
+        public string START_ZONE { get; set; } = string.Empty;
 
         [Description("Pick-Up Appointment required?")]
         public bool PICK_UP_APPT_REQ { get; set; } = false;
@@ -27,6 +27,6 @@ namespace Cheeseman.Models.TPL.Quote
 
         [Description("Collection of freight details.")]
         [Required]
-        public IEnumerable<LTLQuoteRequestDetailModel> DETAILS { get; set; }
+        public IEnumerable<LTLQuoteRequestDetailModel> DETAILS { get; set; } = [];
     }
 }

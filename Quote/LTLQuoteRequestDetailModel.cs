@@ -9,12 +9,12 @@ namespace Cheeseman.Models.TPL.Quote
         [Description("Commodity (Freight Class) - must be 50, 55, 60, 65, 70, 77.5, 85, 92.5, 100, 110, 125, 150, 175, 200, 250, 300, 400, or 500")]
         [AllowedValues("50", "55", "60", "65", "70", "77.5", "85", "92.5", "100", "110", "125", "150", "175", "200", "250", "300", "400", "500")]
         [Required]        
-        public string COMMODITY { get; set; }
+        public string COMMODITY { get; set; } = string.Empty;
 
         [Description("Description of the freight being quoted.")]
         [MaxLength(80)]
         [Required]        
-        public string DESCRIPTION { get; set; }
+        public string DESCRIPTION { get; set; } = string.Empty;
 
         [DefaultValue(1)]
         [Description("Number of handling units")]
@@ -22,12 +22,11 @@ namespace Cheeseman.Models.TPL.Quote
         [Required]       
         public int PIECES { get; set; } = 1;
 
-
-        [DefaultValue(1)]
+        [DefaultValue(1.0)]
         [Description("Weight in pounds")]
-        [Range(1,45000)]
+        [Range(1.0,45000.0)]
         [Required]
-        public double WEIGHT { get; set; } = 1;
+        public double WEIGHT { get; set; } = 1.0;
 
         [DefaultValue(false)]
         [Description("Does the freight contain hazardous material?")]

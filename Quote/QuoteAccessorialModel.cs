@@ -2,14 +2,14 @@
 {
     public class QuoteAccessorialModel
     {
-        public string ACODE_ID { get; set; }
+        public string ACODE_ID { get; set; } = string.Empty;
 
-        public string SHORT_DESC { get; set; }
+        public string SHORT_DESC { get; set; } = string.Empty;
 
-        public double QUANTITY { get; set; }
+        public double QUANTITY { get; set; } = 0.0;
 
-        public double RATE { get; set; }
+        public double RATE { get; set; } = 0.0;
 
-        public double CHARGE_AMOUNT { get; set; }
+        public double CHARGE_AMOUNT { get; set; } = 0.0;
     }
 }
