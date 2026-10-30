@@ -110,5 +110,6 @@ namespace Cheeseman.Models.TPL.Track
 
         public IEnumerable<TrackTraceModel> TRACE { get; set; }
         public IEnumerable<TrackStatusModel> HISTORY { get; set; }
+        public IEnumerable<TrackDocumentListModel> DOCUMENTS { get; set; }
     }
 }
